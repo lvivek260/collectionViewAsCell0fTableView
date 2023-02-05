@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="gTV-IL-0wX" customClass="MovieCollectionViewCell" customModule="TableView___CollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yKh-LV-J3a">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="240"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yKh-LV-J3a" secondAttribute="bottom" id="jz4-wu-c9G"/>
+                <constraint firstItem="yKh-LV-J3a" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jzg-S8-Pck"/>
+                <constraint firstItem="yKh-LV-J3a" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pUH-xE-PQl"/>
+                <constraint firstAttribute="trailing" secondItem="yKh-LV-J3a" secondAttribute="trailing" id="z0W-nY-VjU"/>
+            </constraints>
+            <size key="customSize" width="195" height="158"/>
+            <connections>
+                <outlet property="movieImage" destination="yKh-LV-J3a" id="ajm-s7-AWd"/>
+            </connections>
+            <point key="canvasLocation" x="-12" y="16"/>
+        </collectionViewCell>
+    </objects>
+</document>
